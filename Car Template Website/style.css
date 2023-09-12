@@ -1,0 +1,18 @@
+.card:hover{
+    transform: scale(1.2);
+    transition: 3s;
+    z-index: 1 ;
+    box-shadow: 0px 0px 15px red;
+}
+
+.card {
+    transition: 3s;
+   border: 3px groove black !important
+}
+nav{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+}
+
+.navbar-toggler {background: white !important}

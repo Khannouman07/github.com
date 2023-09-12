@@ -1,0 +1,130 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #979898;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 40vh;
+    min-width: 800px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.timer {
+    width: 92%;
+    background: #ffffff;
+    padding: 40px 0;
+    margin: -70px 0;
+    font-family: 'Roboto mono', monospace;
+    font-weight: bolder;
+    color: #0078b0;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+.buttons {
+    width: 90%;
+    display: inline-flex;
+    margin-top: 100px;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: rgb(91, 253, 110);
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+.buttons .button2 {
+    background-color: rgb(242, 117, 83);
+}
+
+
+.buttons .button3 {
+    background-color: rgb(218, 228, 28);
+}
+
+@media only screen and (max-width:800px) {
+    .container {
+        min-width: 420px;
+    }
+
+    .timer {
+        width: 80%;
+        padding: 30px 0;
+        border-radius: 20px;
+    }
+
+    .buttons {
+        width: 75%;
+        display: inline-flex;
+        margin-top: 100px;
+        gap: 15px;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .container {
+        min-width: 300px;
+    }
+
+    .timer {
+        width: 85%;
+        padding: 30px 0;
+        border-radius: 20px;
+    }
+
+    .buttons {
+        width: 74%;
+        display: inline-flex;
+        margin-top: 85px;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .container {
+        min-width: 260px;
+    }
+
+    .timer {
+        width: 87%;
+        padding: 4px 0;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        width: 80%;
+        display: inline-flex;
+        margin-top: 85px;
+        gap: 15px;
+    }
+
+    .buttons button {
+        border-radius: 10px;
+    }
+}
